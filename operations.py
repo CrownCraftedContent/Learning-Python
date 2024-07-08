@@ -30,3 +30,18 @@ print("\tIs our string alphabetical? " + str(test_string.isalpha()))  # cannot c
 print("\tHow many d's? " + str(test_string.count("d")))  # capitalization matters
 print("\tReplacing spaces with hyphens: " + test_string.replace(" ", "-"))
 print("\t3 times: " + test_string*3)
+
+
+# STRING SLICING
+print("\nSTRING SLICING")
+# slicing = create a substring by extracting elements from another string
+#       indexing[] or slice()
+#       [start:stop:step]
+
+name = "Crown Crafted"
+first_letter = name[0]  # start at 0
+first_name = name[0:5]  # start at 0, end before 5 (ending non-inclusive)
+# ^ also written as {name[0:5:1], name[:5]}
+print("\t" + first_name + " starts with " + first_letter)
+last_name = name[6:]  # easier way to write ALL from index 6 until the END (aka name[6:len(name)])
+print("\t" + "Last Name: " + last_name)
