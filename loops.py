@@ -1,3 +1,4 @@
+import time
 # CrownCraftedContent
 
 # Sidenote: refrain from creating infinite loops
@@ -35,4 +36,20 @@ print(print_string2)
 final_number = None
 for i in range(1, 5):
     final_number = i
-print("\tFinal number in range is " + str(final_number))  # 4
+print("\tFinal number in range(1, 5) is " + str(final_number))  # 4
+
+every_other_number = "\tEvery other number:"
+for i in range(50, 100, 2):
+    every_other_number = every_other_number + " " + str(i)
+print(every_other_number)
+
+print("\tWord")
+for i in "Word":
+    print("\t\t" + str(i))
+
+input("Hit ENTER to start Timer")
+print("\t10 Seconds added to the clock")
+for seconds in range(10,0,-1):
+    print("\t\t" + str(seconds))
+    time.sleep(1)
+print("\tTimer has ended.")
