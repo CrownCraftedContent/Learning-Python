@@ -1,4 +1,5 @@
 # CrownCraftedContent
+# Printing, Variable Assignment, Casting, Input, If Statements, Exceptions
 
 # Python Name Syntax = '_' for spaces
 print("\nVARIABLE TYPES (+ Casting & Formatting)")

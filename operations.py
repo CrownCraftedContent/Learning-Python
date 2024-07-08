@@ -1,5 +1,6 @@
 import math
 # CrownCraftedContent
+# Math operations, string operations, string slicing
 
 print("\n*This script is strictly for simple operations learning*")
 

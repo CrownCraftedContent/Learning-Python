@@ -1,5 +1,6 @@
 import time
 # CrownCraftedContent
+# while loops, for loops, nested loops, time module
 
 # Sidenote: refrain from creating infinite loops
 
