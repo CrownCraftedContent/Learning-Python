@@ -1,0 +1,1 @@
+print("\nThis script is strictly for math learning")
