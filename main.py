@@ -1,3 +1,5 @@
+# CrownCraftedContent
+
 # Python Name Syntax = '_' for spaces
 print("\nVARIABLE TYPES (+ Casting & Formatting)")
 first_name = "First"

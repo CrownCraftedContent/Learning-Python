@@ -1,4 +1,5 @@
 import math
+# CrownCraftedContent
 
 print("\n*This script is strictly for simple operations learning*")
 
@@ -39,19 +40,24 @@ print("\nSTRING SLICING")
 #       [start:stop:step]
 
 # Indexing
+print("\tSTRING INDEXING")
 name = "Crown Crafted"
 first_letter = name[0]  # start at 0
 first_name = name[0:5]  # start at 0, end before 5 (ending non-inclusive)
 # ^ also written as name[0:5:1] or name[:5]
-print("\t" + first_name + " starts with " + first_letter)
+print("\t\t" + first_name + " starts with " + first_letter)
 last_name = name[6:]  # easier way to write ALL from index 6 until the END (aka name[6:len(name)])
-print("\t" + "Last Name: " + last_name)
+print("\t\t" + "Last Name: " + last_name)
 odd_characters = name[0:len(name):2]  # name[::2] for simplification
-print("\tEvery odd character: " + odd_characters)
+print("\t\tEvery odd character: " + odd_characters)
 reversed_name = name[::-1]
-print("\tReversed name: " + reversed_name)
+print("\t\tReversed name: " + reversed_name)
 
-# Splice
+# Slice
 #   Involves creating a (reusable) slice object
-slice = slice()  # same 3 values as index, separate with commas instead
-
+print("\tSPLICE FUNCTION")
+website1 = "http://google.com"
+website2 = "http://wikipedia.com"
+tmp_slice = slice(7, -4)  # 2nd parameter is a negative index (simply works inversely)
+print("\t\t" + website1[tmp_slice])  # 1st website
+print("\t\t" + website2[tmp_slice])  # 2nd website
