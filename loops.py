@@ -14,7 +14,12 @@ print("Hello " + name)
 
 date = None
 while not date:
-    date = input("Enter the date: ")
+    date = input("Enter the date: ")  # empty strings are not stored (considered non-truthy)
+
+while True:
+    title = input("What should I call you?: ")
+    if title != "":
+        break
 
 print("According to you, the date is " + date)
 
