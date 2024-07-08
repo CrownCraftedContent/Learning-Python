@@ -6,11 +6,8 @@ print("\nLISTS")
 #   arrays (adjustable storage containers)
 food = ["pizza", "hamburger", "hotdog", "spaghetti", "pudding"]  # set list
 food[0] = "sushi"  # adjust an element
-
-food.append("ice cream")
 print(food)
-print(food.__class__)
-
+food.append("ice cream")
 food.remove("hotdog")
 food.pop()  # removes the last element
 food.insert(0, "cake")  # adds to a certain index
