@@ -24,26 +24,13 @@ guy1 = guy2 = guy3 = guy4 = 30
 print(f"\tThe ages are {guy1}, {guy2}, {guy3}, and {guy4}")
 
 
-# STRING FUNCTIONS
-print("\nSTRING FUNCTIONS")
-test_string = "Find ABC not d"
-print("\tThe length of the string is " + str(len(test_string)))
-print("\tThe letter 'd' was found at position " + str(test_string.find("d")) + " in ''" + test_string + "''")  # find
-print("\tCapitalization: " + test_string.capitalize())
-print("\tUppercase: " + test_string.upper())
-print("\tLowercase: " + test_string.lower())
-print("\tIs our string a digit? " + str(test_string.isdigit()))
-print("\tIs our string alphabetical? " + str(test_string.isalpha()))  # cannot contain spaces/numbers/etc.
-print("\tHow many d's? " + str(test_string.count("d")))  # capitalization matters
-print("\tReplacing spaces with hyphens: " + test_string.replace(" ", "-"))
-print("\t3 times: " + test_string*3)
-
-
 # USER INPUT
 print("\nUSER INPUT")
 clientName = input("\tWhat is your name?: ")
 print("\tOkay, nice to meet you " + clientName)
 
+
+# EXCEPTION HANDLING (lightly touched)
 clientInt = None
 try:
     clientInt = int(input("\tEnter a float: "))
