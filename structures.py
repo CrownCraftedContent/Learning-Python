@@ -3,7 +3,8 @@
 
 # LISTS
 print("\nLISTS")
-#   arrays (adjustable storage containers)
+#       arrays (adjustable storage containers)
+#       Functions: append, remove, pop, insert, sort, clear
 food = ["pizza", "hamburger", "hotdog", "spaghetti", "pudding"]  # set list
 food[0] = "sushi"  # adjust an element
 print(food)
@@ -16,8 +17,9 @@ food.clear()
 
 # TUPLES
 print("\nTUPLES")
-#   a Tuple is a collection which is ordered and unchangeable
-#   is used to group together related data
+#       a Tuple is a collection which is ordered and unchangeable
+#       is used to group together related data
+#       Functions: count, index
 student = ("Crown", 21, "male")
 print(student.count("Crown"))  # print("\tOccurrences" + str(student.count("Crown")))
 print(student.index("male"))
@@ -28,16 +30,20 @@ if "Crown" in student:
 
 # SETS
 print("\nSETS")
-#   a collection which is unordered, unindexed, and does not retain duplicate values
-#   faster than a list in search time
+#       a collection which is unordered, unindexed, and does not retain duplicate values
+#       faster than a list in search time
+#       Functions: add, remove, clear, update, union, difference, intersection
 utensils = {"fork", "spoon", "knife", "knife"}  # doesn't keep extra knife
 print("Size of utensils set = " + str(len(utensils)))
-utensils.add("napkin")
-utensils.remove("fork")
-print("Utensils = " + str(utensils))
-utensils.clear()
-print("Utensils = " + str(utensils))  # prints set() which is the constructor of its class
-dishes = {"bowl", "plate", "cup"}
-# add one set to another using the update method
-utensils.update(dishes)
-print("Utensils = " + str(utensils))
+# add() utensils.add("napkin")
+# remove() utensils.remove("fork")
+# clear() utensils.clear()
+# dishes = {"bowl", "plate", "cup", "knife"}
+# update() utensils.update(dishes)  # add one set to another using the update method
+# union() dinner_table = utensils.union(dishes)
+# difference() print(utensils.difference(dishes))  # what utensils have that dishes doesn't (1st does that 2nd doesn't)
+# intersection() print(utensils.intersection(dishes))
+
+# DICTIONARIES
+#       a changeable, unordered collection of unique keys with value pairs
+#       fast because they use hashing, allow us to access a value quickly
