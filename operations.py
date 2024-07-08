@@ -41,7 +41,9 @@ print("\nSTRING SLICING")
 name = "Crown Crafted"
 first_letter = name[0]  # start at 0
 first_name = name[0:5]  # start at 0, end before 5 (ending non-inclusive)
-# ^ also written as {name[0:5:1], name[:5]}
+# ^ also written as name[0:5:1] or name[:5]
 print("\t" + first_name + " starts with " + first_letter)
 last_name = name[6:]  # easier way to write ALL from index 6 until the END (aka name[6:len(name)])
 print("\t" + "Last Name: " + last_name)
+odd_characters = name[0:len(name):2]  # name[::2] for simplification
+print("\tEvery odd character: " + odd_characters)
