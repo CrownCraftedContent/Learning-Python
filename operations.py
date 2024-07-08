@@ -38,6 +38,7 @@ print("\nSTRING SLICING")
 #       indexing[] or slice()
 #       [start:stop:step]
 
+# Indexing
 name = "Crown Crafted"
 first_letter = name[0]  # start at 0
 first_name = name[0:5]  # start at 0, end before 5 (ending non-inclusive)
@@ -47,3 +48,10 @@ last_name = name[6:]  # easier way to write ALL from index 6 until the END (aka 
 print("\t" + "Last Name: " + last_name)
 odd_characters = name[0:len(name):2]  # name[::2] for simplification
 print("\tEvery odd character: " + odd_characters)
+reversed_name = name[::-1]
+print("\tReversed name: " + reversed_name)
+
+# Splice
+#   Involves creating a (reusable) slice object
+slice = slice()  # same 3 values as index, separate with commas instead
+
