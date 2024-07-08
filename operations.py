@@ -7,7 +7,7 @@ print("\nMATH FUNCTIONS")
 print("\tSingle Value Calculations")
 value = 5.65
 print("\t\tStarting value = " + str(value))
-print("\t\tRounded = " + str(round(value)))
+print("\t\tRounded = " + str(round(value)))  # 2nd parameter is # of indices behind decimal (default = 0)
 print("\t\tCeiling = " + str(math.ceil(value)))
 print("\t\tFloored = " + str(math.floor(value)))
 print("\t\tSquare root = " + str(math.sqrt(value)))

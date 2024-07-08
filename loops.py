@@ -53,3 +53,16 @@ for seconds in range(10,0,-1):
     print("\t\t" + str(seconds))
     time.sleep(1)
 print("\tTimer has ended.")
+
+# NESTED LOOPS
+#       The inner loop will finish all of its iterations before the outer loop continues its iteration
+rows = round(float(input("How many rows?: ")))
+columns = round(float(input("How many columns?: ")))
+symbol = input("Enter a symbol to use: ")
+
+print("Printing grid")
+for i in range(rows):
+    for v in range(0, columns):  # or range(1, columns+1)
+        print(symbol, end="")  # instead of the traditional , end="\n"      [ALTERNATIVE PRINT ENDING]
+    print()
+print("Done")
