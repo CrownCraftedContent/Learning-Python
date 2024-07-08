@@ -1,0 +1,5 @@
+Python Notes
+    Crown Crafted Content
+
+When viewing the popup auto-fill helper, the object on the right side
+is what the property/function/etc. applies to (not what it returns).
