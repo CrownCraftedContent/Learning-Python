@@ -39,7 +39,7 @@ path2 = 'folder'
 try:
     #os.remove(path)  # delete files
     os.rmdir(path2)  # delete EMPTY directories only
-    #shutil.rmtree(path2)  # delete dir containing files. considered dangerous because removes all contents
+    #shutil.rmtree(path2)  # delete dir's containing files. considered dangerous because removes all contents
 except FileNotFoundError:
     print("That file was not found.")
 except PermissionError:  # thrown when trying to remove an empty folder (directory)
