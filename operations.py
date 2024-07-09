@@ -35,13 +35,12 @@ print("\t3 times: " + test_string*3)
 
 
 # STRING SLICING
-print("\nSTRING SLICING")
-# slicing = create a substring by extracting elements from another string
+#       slicing = create a substring by extracting elements from another string
 #       indexing[] or slice()
-#       [start:stop:step]
 
 # Indexing
-print("\tSTRING INDEXING")
+#       [start:stop:step]
+print("\nSTRING INDEXING")
 name = "Crown Crafted"
 first_letter = name[0]  # start at 0
 first_name = name[0:5]  # start at 0, end before 5 (ending non-inclusive)
@@ -54,11 +53,22 @@ print("\t\tEvery odd character: " + odd_characters)
 reversed_name = name[::-1]
 print("\t\tReversed name: " + reversed_name)
 
-# Slice
-#   Involves creating a (reusable) slice object
-print("\tSPLICE FUNCTION")
+# Slice Function
+#       Involves creating a (reusable) slice object
+print("\tSLICE FUNCTION")
 website1 = "http://google.com"
 website2 = "http://wikipedia.com"
 tmp_slice = slice(7, -4)  # 2nd parameter is a negative index (simply works inversely)
 print("\t\t" + website1[tmp_slice])  # 1st website
 print("\t\t" + website2[tmp_slice])  # 2nd website
+
+# Index Operator []
+#       gives access to a sequence's elements
+using_name = "crown Crafted!"
+if using_name[0].islower():
+    using_name = using_name.capitalize()
+
+first = using_name[:5].upper()
+last = using_name[6:].lower()
+ending_char = using_name[-2]  # because ! is at -1
+print(first, last, "ends with", ending_char)
