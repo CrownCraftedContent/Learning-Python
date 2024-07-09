@@ -1,5 +1,5 @@
 # multi-level inheritance = when a derived (child) class inherits another derived (child) class
-
+print("\nMULTI-LEVEL INHERITANCE")
 class Organism:  # multi-level inheritance parent
     alive = True
 
@@ -36,28 +36,28 @@ hawk.fly()
 # -------------------------------------------------------------------------------------
 # multiple inheritance = whn a child class is derived from more than one parent class
 #   predefined class structures don't appear to be able to touch
+print("\nMULTIPLE INHERITANCE")
 
 class Prey:
     def flee(self):
         print("This animal flees")
 
-
 class Predator:
     def hunt(self):
         print("This animal is hunting")
 
-
-class Rabbit(Prey):
-    pass
+class Bunny(Prey):
+    def flee(self):  # overriden: method most associated with class fires
+        print("This rabbit is hopping away.")
 class Hawk(Predator):
     pass
 class Fish(Prey, Predator):  # <-- multiple inheritance
     pass
-rabbit = Rabbit()
+bunny = Bunny()
 hawk = Hawk()
 fish = Fish()
 
-rabbit.flee()
+bunny.flee()
 hawk.hunt()
 fish.flee()
 fish.hunt()
