@@ -35,6 +35,8 @@ print("\nSETS")
 #       Functions: add, remove, clear, update, union, difference, intersection
 utensils = {"fork", "spoon", "knife", "knife"}  # doesn't keep extra knife
 print("Size of utensils set = " + str(len(utensils)))
+for x in utensils:  # won't always be the same order
+    print(x)
 # add() utensils.add("napkin")
 # remove() utensils.remove("fork")
 # clear() utensils.clear()
@@ -47,3 +49,17 @@ print("Size of utensils set = " + str(len(utensils)))
 # DICTIONARIES
 #       a changeable, unordered collection of unique keys with value pairs
 #       fast because they use hashing, allow us to access a value quickly
+capitals = {'USA': 'WASHINGTON DC',
+            'India': 'New Dehli',
+            'China': 'Beijing',
+            'Russia': 'Moscow'}
+
+# Errors can be caused by capitals['Germany']
+print(capitals.get('Germany'))  # prints None
+capitals.keys()
+capitals.values()
+capitals.items()
+capitals.update({'Germany': 'Berlin'})  # can also update already existing keys
+print(capitals.items())
+capitals.pop('India')
+capitals.clear()
