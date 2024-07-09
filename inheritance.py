@@ -45,6 +45,7 @@ class Prey:
 class Predator:
     def hunt(self):
         print("This animal is hunting")
+        return self
 
 class Bunny(Prey):
     def flee(self):  # overriden: method most associated with class fires
@@ -61,3 +62,11 @@ bunny.flee()
 hawk.hunt()
 fish.flee()
 fish.hunt()
+
+# METHOD CHAINING
+#       hunt() returns self, so we'll keep calling it on fish
+fish.hunt().hunt().hunt().hunt()
+#       \ is a line continuation character, so we could instead say
+fish.hunt().hunt()\
+    .hunt().hunt()\
+    .hunt().hunt()
