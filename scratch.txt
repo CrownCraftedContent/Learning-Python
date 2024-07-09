@@ -1,5 +1,14 @@
 Python Notes
     Crown Crafted Content
 
-When viewing the popup auto-fill helper, the object on the right side
+Localization: a new variable is created before an old non-local one is modified
+    + local variables can be created with the same name as globals
+    + LEGB Order:
+        - Local
+        - Enclosing
+        - Global
+        - Built-in
+
+When viewing the popup auto-fill helper, the object type on the right side
 is what the property/function/etc. applies to (not what it returns).
+    + Shows the possible data types of what were are accessing properties/functions of
