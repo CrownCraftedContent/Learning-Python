@@ -38,3 +38,11 @@ def hello(**kwargs):
 
 hello(first="Jack", last="Johnson", extra="The 3rd")
 
+
+# FUNCTIONS AS VARIABLES
+print("hello Function is located at: " + str(hello))  # <-- DATA MEMORY POSITION
+hi = hello
+hi(first="Jack", last="Johnson", extra="The 3rd")  # can be used as a duplicate
+
+say = print
+say("\nPrinting without the print function!")
