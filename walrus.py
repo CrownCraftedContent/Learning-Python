@@ -22,3 +22,4 @@ foods = list()
 while (food := input("What food do you like?: ")) != 'quit':
     foods.append(food)
 print("You appear to enjoy " + str(foods))
+print("I can still see your final input of: " + food)
