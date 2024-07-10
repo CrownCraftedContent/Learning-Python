@@ -1,5 +1,5 @@
 # super() = Function used to give access to the methods (& more?) of a parent class
-#       Returns a temporary object of a parent class when used
+#           Returns a temporary object of a parent class when used
 
 class Rectangle:
     def __init__(self, length, width):
@@ -24,4 +24,3 @@ square = Square(2,2)
 cube = Cube(3,3,3)
 print(square.area())
 print(cube.volume())
-
