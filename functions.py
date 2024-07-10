@@ -6,7 +6,7 @@ def setnameto(new_string):
     name = new_string
     print("Locally:", name)
 
-setnameto("Bill")
+setnameto("Bill")  # <-- doesn't affect global variable, only local
 print("Afterword, Globally:", name)
 
 # *args
@@ -39,10 +39,42 @@ def hello(**kwargs):
 hello(first="Jack", last="Johnson", extra="The 3rd")
 
 
-# FUNCTIONS AS VARIABLES
+# FUNCTIONS AS VARIABLES/OBJECTS
 print("hello Function is located at: " + str(hello))  # <-- DATA MEMORY POSITION
 hi = hello
 hi(first="Jack", last="Johnson", extra="The 3rd")  # can be used as a duplicate
 
 say = print
 say("\nPrinting without the print function!")
+
+# HIGH ORDER FUNCTION
+#   a function that either:
+#       accepts a function as an argument
+#       or returns a function (basically instantiating/objectifying)
+
+# ACCEPTING FUNCTIONS v
+def loud(text):
+    return text.upper()
+
+def quiet(text):
+    return text.lower()
+
+def hello(func):
+    text = func("Hello")
+    print(text)
+
+hello(loud)
+hello(quiet)
+# ACCEPTING FUNCTIONS ^
+
+# RETURNING FUNCTIONS v
+def divisor(x):
+    def dividend(y):
+        return y / x
+    return dividend
+
+print(str(divisor(7)(2)))
+
+half = divisor(2)
+print(str(half(10)))
+# RETURNING FUNCTIONS ^
