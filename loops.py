@@ -1,4 +1,4 @@
-import time
+import timing
 # CrownCraftedContent
 # while loops, for loops, nested loops, time module
 
