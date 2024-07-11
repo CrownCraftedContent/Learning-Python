@@ -1,5 +1,5 @@
 # thread =  a separated flow of execution, like a river segment
-#           threads run on different processors on your computer, however only 1 at a time in Python
+#           threads run concurrently unlike processes which run in parallel
 #           each thread takes a turn running to achieve concurrency
 #           GIL = (global interpreter lock)
 #                   allows only one thread to hold the control
